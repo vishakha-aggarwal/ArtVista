@@ -1,0 +1,89 @@
+.contactContainer {
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    place-items: center;
+    min-height: 90vh;
+    text-align: justify;
+}
+
+.mailBtn {
+    text-decoration: none;
+    transform: translateX(-100vw);
+    animation: mailBtnAnimation 2s forwards;
+}
+
+.contactText{
+    padding-top: 5vh;
+    font: 200 1.5vw "Roboto";
+    font-style: italic;
+    font-family: cursive;
+}
+
+.mailBtn>button {
+    text-decoration: none;
+    font: 200 1.5vw "Roboto";
+    cursor: url("https://img.icons8.com/color/48/000000/edit--v2.png"), pointer;
+    padding: 2vmax;
+    width: 100%;
+}
+
+.contactLogo{
+    width: 30vw;
+    border-radius: 50%;
+    box-shadow: 0px 0px 40px darkseagreen;
+    padding: 1vw;
+}
+
+@media screen and (max-width: 1000px) {
+    .contactText{
+        font: 200 15px "Roboto";    
+        font-style: italic;
+        font-family: cursive;
+    }
+    
+    .mailBtn>button {
+        font: 200 15px "Roboto";
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .contactContainer{
+        display: block;
+    }
+    
+    .contactLogo{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 40px darkseagreen;
+        padding: 1vw;
+        margin-top: 5vh;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    
+    .contactLogo{
+        width: 150px;
+        height: 150px;
+    }
+    .contactText{
+        font: 200 11px "Roboto";
+        font-style: italic;
+        font-family: cursive;
+    }
+    
+    .mailBtn>button {
+        font: 200 11px "Roboto";
+        padding: 10px 0px;
+    }
+
+}
+
+@keyframes mailBtnAnimation {
+    to {
+        transform: translateX(0);
+    }
+}
