@@ -80,7 +80,7 @@ exports.forgotPassword = catchAsyncError(async (req, res, next) => {
 
     await user.save({ validateBeforeSave: false });
     // const resetPasswordUrl = `${req.protocol}://${req.get("host")}/api/v1/password/reset/${resetToken}`;
-    const api = "localhost:5000";
+    const api = "https://art-vista.vercel.app";
     const resetPasswordUrl = api + `/password/reset/${resetToken}`; 
     const message = `Your password reset token is :- \n\n ${resetPasswordUrl} \n\n. 
     If you have not requested this email then, please ignore it.`;

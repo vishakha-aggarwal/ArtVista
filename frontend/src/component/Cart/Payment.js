@@ -51,7 +51,7 @@ const Payment = () => {
         payBtn.current.disabled = true;
         try {
             const config = { method: "POST", headers: { "Content-Type": "application/json" }, withCredentials: 'true', credentials: 'include' };
-            const api = "http://localhost:5000";
+            const api = "https://art-vista.vercel.app";
             const { data } = await axios.post(api + "/api/v1/payment/process",
                 paymentData,
                 config

@@ -4,7 +4,7 @@ import {
     SAVE_SHIPPING_INFO,
 } from "../constants/cartConstants";
 import axios from "axios";
-const api = "http://localhost:5000";
+const api = "https://art-vista.vercel.app";
 
 // Add to Cart
 export const addItemsToCart = (id, quantity) => async (dispatch, getState) => {

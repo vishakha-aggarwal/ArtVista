@@ -39,7 +39,7 @@ import {
 
     CLEAR_ERRORS,
 } from "../constants/productConstants";
-const api = "http://localhost:5000";
+const api = "https://art-vista.vercel.app";
 
 // Get All Products
 export const getProduct = (keyword = "", currentPage = 1, price = [0, 25000], category, ratings=0) => async (dispatch) => {
