@@ -6,7 +6,7 @@ const Sidebar = (props) => {
 
     const [open, setOpen] = props.open;
     return (
-        <div className="navSidebar" style={{right: open === false? "-200px" : "0px" }}>
+        <div className="navSidebar" style={{display: open === false? "none" : "block" }}>
             <Link to="/">
                 <div>Home</div>
             </Link>

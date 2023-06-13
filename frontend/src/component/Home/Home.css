@@ -11,6 +11,46 @@
     
 }
 
+.bannerCont{
+    background-image: url('../../Images/bgimg.png');
+    height: 90vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 50vh 100vw;
+    background-blend-mode: multiply; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;    
+    background-color: beige;
+}
+
+
+.bannerContent{
+    color: rgb(56, 56, 56);
+    font-size: 30px;
+    font-family: cursive;
+    height: fit-content;
+    margin: auto;
+    width: fit-content;
+    padding-top: 20vh;
+    font-style: italic;
+    /* filter: unset blur; */
+    text-align: center;
+}
+
+.bannerContent:hover{
+    color: rgb(87, 87, 87);
+    /* filter: unset blur; */
+    transition: all 0.5s ease-in;
+    font-size: 31px;
+
+}
+
+.bannerContext{
+    padding: 1vw;
+}
+
 .FeaturedHeading {
     text-align: center;
     font-family: Roboto;
@@ -20,6 +60,7 @@
     padding: 1vmax;
     margin: 1vmax auto;
     color: rgb(0, 0, 0, 0.7);
+    margin-top: 5vh;
 }
 
 
@@ -104,6 +145,18 @@
         margin: 0.3vmax;
         font-size: smaller;
     }
+
+    .bannerContent{
+        font-size: 25px;
+    }
+    
+    .bannerContent:hover{
+        color: rgb(87, 87, 87);
+        /* filter: unset blur; */
+        transition: all 0.5s ease-in;
+        text-shadow: 1px 1px 1px rgb(170, 200, 255);
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -114,6 +167,14 @@
         width: 50vw;
     }
     
+    .bannerContent{
+        font-size: 6vw;
+    }
+    .bannerContext{
+        padding: 1.5vw 1vw;
+        font-size: 20px;    
+    }
+
     .productCard {
         width: 18vmax;
     }
@@ -160,5 +221,12 @@
         width: 50%;
         height: 22vh;
         /* margin-left: 20%; */
+    }
+    .bannerContent{
+        font-size: 6vw;
+    }
+    .bannerContext{
+        padding: 1.5vw 1vw;
+        font-size: 15px;    
     }
 }

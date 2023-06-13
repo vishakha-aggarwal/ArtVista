@@ -1,7 +1,7 @@
 .navSidebar {
     margin-top: calc(40px + 1vmax);
     background-color: white;
-    /* right: 0; */
+    right: 0;
     /* height: 100vh; */
     position: absolute;
     width: 100px;
